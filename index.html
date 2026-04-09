@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نازل - نظم حياتك وتجنب النسيان</title>
-    <meta name="description"
+    <title data-i18n="meta_title">نازل - نظم حياتك وتجنب النسيان</title>
+    <meta name="description" data-i18n-attr="content:meta_desc"
         content="نازل يساعدك على التنظيم وتجنب الأخطاء، مما يقلل من التوتر والقلق ويوفر الوقت والجهد من خلال قوائم مراجعة ذكية.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,11 +30,17 @@
                 <img src="Nazel-logo-png-tr.png" alt="نازل Logo">
             </a>
             <div class="nav-links">
-                <a href="#about" class="nav-link">عن التطبيق</a>
-                <a href="#features" class="nav-link">المميزات</a>
-                <a href="#use_cases" class="nav-link">لمن نازل؟</a>
+                <a href="#about" class="nav-link" data-i18n="nav_about">عن التطبيق</a>
+                <a href="#features" class="nav-link" data-i18n="nav_features">المميزات</a>
+                <a href="#use_cases" class="nav-link" data-i18n="nav_use_cases">لمن نازل؟</a>
             </div>
-            <a href="#download" class="btn btn-primary">حمل التطبيق الآن</a>
+            <div class="nav-actions">
+                <button id="lang-switcher" class="lang-btn">
+                    <i class="fas fa-globe"></i>
+                    <span class="lang-text">EN</span>
+                </button>
+                <a href="#download" class="btn btn-primary" data-i18n="nav_download">حمل التطبيق الآن</a>
+            </div>
         </div>
     </nav>
 
@@ -46,23 +52,23 @@
 
         <div class="container hero-container">
             <div class="hero-content" data-aos="fade-left">
-                <h1>نظم حياتك وتجنب النسيان مع <span>نازل</span></h1>
-                <p>الهدف من نازل هو مساعدة الأفراد على التنظيم وتجنب الأخطاء. هدفنا الرئيسي هو تفادي النسيان وضمان إحضار
+                <h1 data-i18n="hero_title">نظم حياتك وتجنب النسيان مع <span>نازل</span></h1>
+                <p data-i18n="hero_desc">الهدف من نازل هو مساعدة الأفراد على التنظيم وتجنب الأخطاء. هدفنا الرئيسي هو تفادي النسيان وضمان إحضار
                     جميع الأشياء الضرورية، مما يقلل من التوتر والقلق ويوفر الوقت والجهد.</p>
                 <div class="hero-cta">
                     <a href="https://play.google.com/store/apps/details?id=com.tech.oriented.nazel"
                         class="store-btn playstore">
                         <i class="fab fa-google-play"></i>
                         <div class="store-text">
-                            <span>احصل عليه من</span>
-                            <strong>جوجل بلاي</strong>
+                            <span data-i18n="store_get_it_on">احصل عليه من</span>
+                            <strong data-i18n="store_playstore">جوجل بلاي</strong>
                         </div>
                     </a>
                     <a href="#download" class="store-btn appstore">
                         <i class="fab fa-apple"></i>
                         <div class="store-text">
-                            <span>حمله من</span>
-                            <strong>متجر ابل</strong>
+                            <span data-i18n="store_download_from">حمله من</span>
+                            <strong data-i18n="store_appstore">متجر ابل</strong>
                         </div>
                     </a>
                 </div>
@@ -82,12 +88,12 @@
                 </div>
             </div>
             <div class="about-content" data-aos="fade-up">
-                <div class="section-badge">لماذا نازل؟</div>
-                <h2>قوائم مراجعة ذكية لكل أنشطتك</h2>
-                <p>نازل به قوائم مراجعة مرتبطة بالأنشطة اليومية للأفراد مثل الذهاب للعمل، الذهاب للجيم، المدرسة وغيرها
+                <div class="section-badge" data-i18n="about_badge">لماذا نازل؟</div>
+                <h2 data-i18n="about_title">قوائم مراجعة ذكية لكل أنشطتك</h2>
+                <p data-i18n="about_p1">نازل به قوائم مراجعة مرتبطة بالأنشطة اليومية للأفراد مثل الذهاب للعمل، الذهاب للجيم، المدرسة وغيرها
                     من الأنشطة. يمكنك ضمان عدم نسيان أي شيء أو إغفاله. ويمكن للأفراد تحسين كفاءتهم وإنتاجيتهم، وتقليل
                     التوتر والقلق، وتحقيق أقصى استفادة.</p>
-                <p>نازل مفيد لجميع الأعمار؛ فقوائم المراجعة مفيدة للشباب والكبار على حد سواء، فهي تساعد في تطوير مهارات
+                <p data-i18n="about_p2">نازل مفيد لجميع الأعمار؛ فقوائم المراجعة مفيدة للشباب والكبار على حد سواء، فهي تساعد في تطوير مهارات
                     التخطيط والتنظيم لديهم.</p>
             </div>
         </div>
@@ -97,29 +103,29 @@
     <section id="features" class="features section bg-light">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2>مع نازل.. حياتك أسهل وأكثر إيجابية</h2>
-                <p>اكتشف كيف يمكن لتطبيق نازل أن يغير روتينك اليومي للأفضل</p>
+                <h2 data-i18n="features_title">مع نازل.. حياتك أسهل وأكثر إيجابية</h2>
+                <p data-i18n="features_subtitle">اكتشف كيف يمكن لتطبيق نازل أن يغير روتينك اليومي للأفضل</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon-box"><i class="fas fa-layer-group"></i></div>
-                    <h3>تعزيز التنظيم والترتيب</h3>
-                    <p>نازل هيساعدك في تطوير عادة التنظيم والترتيب في حياتك اليومية، وبالتالي حياتك هتكون إيجابية أكثر.
+                    <h3 data-i18n="feature1_title">تعزيز التنظيم والترتيب</h3>
+                    <p data-i18n="feature1_desc">نازل هيساعدك في تطوير عادة التنظيم والترتيب في حياتك اليومية، وبالتالي حياتك هتكون إيجابية أكثر.
                     </p>
                 </div>
 
                 <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box"><i class="fas fa-search-location"></i></div>
-                    <h3>توفير الوقت والجهد</h3>
-                    <p>لا داعي للبحث عن الأشياء المفقودة أو التفكير فيما يجب أخذه معك، مما يوفر الوقت والجهد ويسهل عملية
+                    <h3 data-i18n="feature2_title">توفير الوقت والجهد</h3>
+                    <p data-i18n="feature2_desc">لا داعي للبحث عن الأشياء المفقودة أو التفكير فيما يجب أخذه معك، مما يوفر الوقت والجهد ويسهل عملية
                         الخروج من المنزل.</p>
                 </div>
 
                 <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon-box"><i class="fas fa-brain"></i></div>
-                    <h3>تجنب النسيان</h3>
-                    <p>هتضمن عدم نسيان أي شيء مهم مثل المفاتيح، المحفظة، الهاتف، النظارات، أو أي أغراض شخصية أخرى
+                    <h3 data-i18n="feature3_title">تجنب النسيان</h3>
+                    <p data-i18n="feature3_desc">هتضمن عدم نسيان أي شيء مهم مثل المفاتيح، المحفظة، الهاتف، النظارات، أو أي أغراض شخصية أخرى
                         ضرورية.</p>
                 </div>
             </div>
@@ -130,8 +136,8 @@
     <section id="use_cases" class="use-cases section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2>قوائم مراجعة لكل احتياجاتك</h2>
-                <p>أياً كان مجالك أو احتياجك، نازل يوفر لك القائمة المناسبة</p>
+                <h2 data-i18n="use_cases_title">قوائم مراجعة لكل احتياجاتك</h2>
+                <p data-i18n="use_cases_subtitle">أياً كان مجالك أو احتياجك، نازل يوفر لك القائمة المناسبة</p>
             </div>
 
             <div class="accordion-container" data-aos="fade-up">
@@ -140,12 +146,12 @@
                     <div class="accordion-header">
                         <div class="acc-title">
                             <i class="fas fa-check-square"></i>
-                            <h3>قائمة مراجعة لا تنسى الاشياء الضرورية</h3>
+                            <h3 data-i18n="case1_title">قائمة مراجعة لا تنسى الاشياء الضرورية</h3>
                         </div>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>هتضمن عدم نسيان أي شيء مهم مثل المفاتيح، المحفظة، الهاتف، النظارات أو أي أغراض شخصية أخرى
+                        <p data-i18n="case1_desc">هتضمن عدم نسيان أي شيء مهم مثل المفاتيح، المحفظة، الهاتف، النظارات أو أي أغراض شخصية أخرى
                             ضرورية من خلال قائمة المراجعة الرئيسية الموجودة بالتطبيق والمخصصة لهذا الغرض، وستجدها في
                             القائمة الجانبية تحت عنوان "لا تنسي الاشياء الضرورية".</p>
                     </div>
@@ -156,12 +162,12 @@
                     <div class="accordion-header">
                         <div class="acc-title">
                             <i class="fas fa-calendar-alt"></i>
-                            <h3>إدارة الأنشطة اليومية</h3>
+                            <h3 data-i18n="case2_title">إدارة الأنشطة اليومية</h3>
                         </div>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>هتضمن عدم نسيان اي شيء مهم ومرتبط بالنشاط اليومي لحياتك مثل الذهاب للعمل، الجيم، المدرسة
+                        <p data-i18n="case2_desc">هتضمن عدم نسيان اي شيء مهم ومرتبط بالنشاط اليومي لحياتك مثل الذهاب للعمل، الجيم، المدرسة
                             وغيرها من الأنشطة من خلال قوائم المراجعة المخصصة لضمان عدم نسيان أي شيء أو إغفاله. لتحسين
                             كفاءتك، وتقليل التوتر، وتحقيق أقصى استفادة.</p>
                     </div>
@@ -172,12 +178,12 @@
                     <div class="accordion-header">
                         <div class="acc-title">
                             <i class="fas fa-building"></i>
-                            <h3>التعامل مع الجهات الحكومية</h3>
+                            <h3 data-i18n="case3_title">التعامل مع الجهات الحكومية</h3>
                         </div>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>نازل هيساعدك في معرفة وتعلم كل المطلوب للتعامل مع اي جهة سواء مؤسسة حكومية او خاصة من خلال
+                        <p data-i18n="case3_desc">نازل هيساعدك في معرفة وتعلم كل المطلوب للتعامل مع اي جهة سواء مؤسسة حكومية او خاصة من خلال
                             قوائم مراجعة معدة خصيصا لهذا الغرض مثل التعامل مع المرور والقضاء ووزارات التموين والداخلية
                             والخارجية وغيرها من الوزرات الهامة.</p>
                     </div>
@@ -188,12 +194,12 @@
                     <div class="accordion-header">
                         <div class="acc-title">
                             <i class="fas fa-briefcase"></i>
-                            <h3>قوائم مراجعة لأصحاب المهن الحرة</h3>
+                            <h3 data-i18n="case4_title">قوائم مراجعة لأصحاب المهن الحرة</h3>
                         </div>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>نازل مش ناسي أصحاب المهن الحرة مثل المحامين - الأطباء - المهندسين .... وغيرها من التخصصات
+                        <p data-i18n="case4_desc">نازل مش ناسي أصحاب المهن الحرة مثل المحامين - الأطباء - المهندسين .... وغيرها من التخصصات
                             المختلفة حيث توجد قوائم مراجعة معدة خصيصاً لكل تخصص عشان تسهل شغلهم وحياتهم المهنية.</p>
                     </div>
                 </div>
@@ -203,12 +209,12 @@
                     <div class="accordion-header">
                         <div class="acc-title">
                             <i class="fas fa-users"></i>
-                            <h3>للعاملين في أي تخصص أو مجال</h3>
+                            <h3 data-i18n="case5_title">للعاملين في أي تخصص أو مجال</h3>
                         </div>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>نازل مش ناسي أيضاً العاملين في أي تخصص أو مجال زي المحاسبين والموارد البشرية وغيرها من المهن
+                        <p data-i18n="case5_desc">نازل مش ناسي أيضاً العاملين في أي تخصص أو مجال زي المحاسبين والموارد البشرية وغيرها من المهن
                             بحيث توجد قوائم مراجعة لكل تخصص.</p>
                     </div>
                 </div>
@@ -220,22 +226,22 @@
     <section id="download" class="download-section">
         <div class="container footer-container">
             <div class="footer-cta" data-aos="zoom-in">
-                <h2>باختصار، نازل معاك في حياتك اليومية!</h2>
-                <p>هتساعدك تدير حياتك كويس من أول النزول من البيت، إلى الرياضة والصحة والعمل.</p>
+                <h2 data-i18n="footer_cta_title">باختصار، نازل معاك في حياتك اليومية!</h2>
+                <p data-i18n="footer_cta_desc">هتساعدك تدير حياتك كويس من أول النزول من البيت، إلى الرياضة والصحة والعمل.</p>
                 <div class="hero-cta justify-center mt-3">
                     <a href="https://play.google.com/store/apps/details?id=com.tech.oriented.nazel"
                         class="store-btn playstore">
                         <i class="fab fa-google-play"></i>
                         <div class="store-text">
-                            <span>احصل عليه من</span>
-                            <strong>جوجل بلاي</strong>
+                            <span data-i18n="store_get_it_on">احصل عليه من</span>
+                            <strong data-i18n="store_playstore">جوجل بلاي</strong>
                         </div>
                     </a>
                     <a href="#" class="store-btn appstore">
                         <i class="fab fa-apple"></i>
                         <div class="store-text">
-                            <span>حمله من</span>
-                            <strong>متجر ابل</strong>
+                            <span data-i18n="store_download_from">حمله من</span>
+                            <strong data-i18n="store_appstore">متجر ابل</strong>
                         </div>
                     </a>
                 </div>
@@ -244,7 +250,7 @@
             <footer class="main-footer">
                 <div class="footer-bottom">
                     <img src="Nazel-logo-png-tr.png" alt="نازل" class="footer-logo">
-                    <p>جميع الحقوق محفوظة &copy; <span id="year"></span> لتطبيق نازل.</p>
+                    <p data-i18n="footer_rights">جميع الحقوق محفوظة &copy; <span id="year"></span> لتطبيق نازل.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/tech.oriented.nazel"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.tiktok.com/@tech.oriented.nazel"><i class="fab fa-tiktok"></i></a>

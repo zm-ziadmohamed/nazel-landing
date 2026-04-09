@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tajawal', sans-serif;
+    font-family: inherit;
 }
 
 body {
@@ -24,6 +24,11 @@ body {
     color: var(--text-main);
     line-height: 1.7;
     overflow-x: hidden;
+    font-family: 'Tajawal', sans-serif;
+}
+
+html[lang="en"] body {
+    font-family: 'Inter', sans-serif;
 }
 
 h1,
@@ -109,7 +114,7 @@ a {
     content: '';
     position: absolute;
     bottom: -5px;
-    right: 0;
+    inset-inline-end: 0;
     width: 0;
     height: 2px;
     background: var(--primary);
@@ -118,6 +123,35 @@ a {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lang-btn {
+    background: rgba(33, 129, 196, 0.1);
+    border: 1px solid rgba(33, 129, 196, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.lang-btn i {
+    font-size: 1rem;
 }
 
 .btn-primary {
@@ -154,7 +188,7 @@ a {
     height: 500px;
     background: rgba(131, 207, 242, 0.4);
     top: -100px;
-    right: -100px;
+    inset-inline-end: -100px;
 }
 
 .shape-2 {
@@ -162,7 +196,7 @@ a {
     height: 400px;
     background: rgba(33, 129, 196, 0.2);
     bottom: 0;
-    left: -150px;
+    inset-inline-start: -150px;
 }
 
 .hero-container {
@@ -231,7 +265,7 @@ a {
 .store-text {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: start;
 }
 
 .store-text span {
@@ -485,7 +519,7 @@ a {
     background: rgba(255, 255, 255, 0.08);
     border-radius: 50%;
     top: -150px;
-    right: -100px;
+    inset-inline-end: -100px;
 }
 
 .footer-cta h2 {
